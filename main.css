@@ -23,6 +23,7 @@ main div {
 }
 
 main div.ball {
+  z-index: 100;
   background-color: azure;
   border-radius: 50%;
   animation: aaliyah 2s infinite;
@@ -32,9 +33,22 @@ main div.ball {
 @keyframes aaliyah {
   0% {
     transform: translate(-100%, 0);
+    z-index: 1500;
   }
 
   50% {
     transform: translate(100%, 0);
+    z-index: 500;
+  }
+}
+main div.square {
+  z-index: 50;
+
+  animation: cremora 2s stop-end infinite;
+}
+
+@keyframes cremora {
+  50% {
+    z-index: 150;
   }
 }
