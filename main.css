@@ -24,19 +24,19 @@ main div {
 
 main div.ball {
   z-index: 100;
-  background-color: azure;
+  background-color: aquamarine;
   border-radius: 50%;
   animation: aaliyah 2s infinite;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 100%);
 }
 
 @keyframes aaliyah {
   0% {
-    transform: translate(-100%, 0);
+    transform: translate(-100%, 100%);
   }
 
   50% {
-    transform: translate(100%, 0);
+    transform: translate(100%, -100%);
   }
 }
 main div.square {
