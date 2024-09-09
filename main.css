@@ -10,14 +10,27 @@ body {
   place-items: center;
 }
 main {
-  background-color: pink;
+  background-color: black;
   position: relative;
 }
 main div {
   width: 50px;
   aspect-ratio: 1/1;
-  background-color: black;
+  background-color: purple;
   position: absolute;
+  top: 0;
+  left: 0;
+  animation: aaliyah 2s infinite;
+}
+@keyframes aaliyah {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate (-100, 0);
+  }
 }
 main div.square {
   background-color: azure;
