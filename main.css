@@ -33,22 +33,29 @@ main div.ball {
 @keyframes aaliyah {
   0% {
     transform: translate(-100%, 0);
-    z-index: 1500;
   }
 
   50% {
     transform: translate(100%, 0);
-    z-index: 500;
   }
 }
 main div.square {
   z-index: 50;
-
+  animation: cremora 2s infinite;
   animation: cremora 2s stop-end infinite;
 }
 
 @keyframes cremora {
+  0% {
+    z-index: 50;
+  }
+  49% {
+    z-index: 50;
+  }
   50% {
+    z-index: 150;
+  }
+  100% {
     z-index: 150;
   }
 }
